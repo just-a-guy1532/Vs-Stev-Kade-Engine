@@ -64,8 +64,6 @@
 	<assets path="assets/songs"    library="songs"    exclude="*.mp3" unless="web"/>
 	<assets path="assets/shared"   library="shared"   exclude="*.ogg" if="web"/>
 	<assets path="assets/shared"   library="shared"   exclude="*.mp3" unless="web"/>
-	<assets path="assets/tutorial" library="tutorial" exclude="*.ogg" if="web"/>
-	<assets path="assets/tutorial" library="tutorial" exclude="*.mp3" unless="web"/>
 	
 	<assets path='example_mods' rename='mods' embed='false'/>
 	<!-- <assets path='LICENSE' rename='LICENSE.txt' /> -->
@@ -95,7 +93,7 @@
 	<haxelib name="polymod"/>
 	<haxelib name="discord_rpc" if="windows"/>
 	<haxelib name="linc_luajit" unless="web"/>
-    <haxelib name="extension-androidtools" if="android"/>
+        <haxelib name="extension-androidtools" if="android"/>
 
 	<!-- <haxelib name="hxcpp-debug-server" if="desktop"/> -->
 
@@ -147,7 +145,7 @@
 	<!--Android-Stuff-->
 	<android permission="android.permission.ACCESS_NETWORK_STATE"/>
 	<android permission="android.permission.INTERNET"/>
-    <android target-sdk-version="29" />
+        <android target-sdk-version="29" />
 
 	<!-- _________________________________ Custom _______________________________ -->
 
