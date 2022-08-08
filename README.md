@@ -1,6 +1,6 @@
 ![Kade Engine logo](https://user-images.githubusercontent.com/26305836/110529589-4b4eb600-80ce-11eb-9c44-e899118b0bf0.png)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/mcagabe19/Kade-Engine-1.5-Android)
+![GitHub repo size](https://img.shields.io/github/repo-size/mcagabe19/Vs-Stev-Kade-Engine)
 
 # Friday Night Funkin': Kade Engine
 ## Friday Night Funkin'
