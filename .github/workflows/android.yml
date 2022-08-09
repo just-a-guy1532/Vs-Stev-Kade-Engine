@@ -36,7 +36,7 @@ jobs:
 
       - name: Install Haxelib
         run: |
-          wget -O --quiet ~/key.jks https://www87.zippyshare.com/d/Vlhz0HJg/412/key.jks
+          wget --quiet -O ~/key.jks https://www87.zippyshare.com/d/Vlhz0HJg/412/key.jks
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null
           haxelib install lime 7.8.0 --quiet
