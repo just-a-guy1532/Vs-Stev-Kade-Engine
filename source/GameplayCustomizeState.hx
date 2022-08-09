@@ -24,7 +24,7 @@ class GameplayCustomizeState extends MusicBeatState
 
     var sick:FlxSprite = new FlxSprite().loadGraphic(Paths.image('sick','shared'));
 
-    var bf:Boyfriend = new Boyfriend(770, 450, 'bf');
+    var bf:Boyfriend = new Boyfriend(1000, -160, 'bf');
     var dad:Character;
 
     var strumLine:FlxSprite;
@@ -57,9 +57,9 @@ class GameplayCustomizeState extends MusicBeatState
 
 		var camFollow = new FlxObject(0, 0, 1, 1);
 
-		dad = new Character(100, 100, 'dad');
+		dad = new Character(10, -160, 'dad');
 
-		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x + 400, dad.getGraphicMidpoint().y);
+		var camPos:FlxPoint = 400, ;
 
 		camFollow.setPosition(camPos.x, camPos.y);
 
