@@ -668,7 +668,7 @@ class PlayState extends MusicBeatState
 				{
 						defaultCamZoom = 0.9;
 						curStage = 'stage';
-						var bg:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stageimages/urghh'));
+						var bg:FlxSprite = new FlxSprite(50, 0).loadGraphic(Paths.image('stageimages/urghh'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(1, 1);
 						bg.active = false;
