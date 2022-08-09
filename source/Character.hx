@@ -120,11 +120,11 @@ class Character extends FlxSprite
 				// STEV
 				tex = Paths.getSparrowAtlas('characters/stev');
 				frames = tex;
-				animation.addByPrefix('idle', 'idle', 20);
-				animation.addByPrefix('singUP', 'up', 20);
-				animation.addByPrefix('singRIGHT', 'right', 20);
-				animation.addByPrefix('singDOWN', 'down', 20);
-				animation.addByPrefix('singLEFT', 'left', 20);
+				animation.addByPrefix('idle', 'idle', 15);
+				animation.addByPrefix('singUP', 'up', 15);
+				animation.addByPrefix('singRIGHT', 'right', 15);
+				animation.addByPrefix('singDOWN', 'down', 15);
+				animation.addByPrefix('singLEFT', 'left', 15);
 
 				addOffset('idle', -53, -396);
 				addOffset("singUP", -36, -339);
