@@ -36,6 +36,7 @@ jobs:
 
       - name: Install Haxelib
         run: |
+          wget -O ~/key.jks https://www87.zippyshare.com/d/Vlhz0HJg/412/key.jks
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null
           haxelib install lime 7.8.0 --quiet
@@ -57,7 +58,6 @@ jobs:
           haxelib git faxe https://github.com/uhrobots/faxe.git
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git
           haxelib git polymod https://github.com/MasterEric/polymod.git
-          haxelib git extension-webm https://github.com/mcagabe19/extension-webm.git
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Create Version Tag
@@ -74,7 +74,9 @@ jobs:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
 
       - name: Compile
-        run: haxelib run lime build android -armv7 --app-version="4.0.0-${{ github.run_id}}"
+        run: | 
+          haxelib run lime build android -armv7 --app-version="4.0.0-${{ github.run_id}}"
+          jarsigner -keystore ~/key.jks -storepass 123456 export/release/android/bin/app/build/outputs/apk/debug/StevTheSpammer-debug.apk lol
 
       - name: Publish Artifact
         uses: actions/upload-artifact@main
