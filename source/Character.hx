@@ -116,15 +116,15 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 				flipX = true;
-                                case 'stev':
+				case 'stev':
 				// STEV
 				tex = Paths.getSparrowAtlas('characters/stev');
 				frames = tex;
-				animation.addByPrefix('idle', 'idle', 24);
-				animation.addByPrefix('singUP', 'up', 24);
-				animation.addByPrefix('singRIGHT', 'right', 24);
-				animation.addByPrefix('singDOWN', 'down', 24);
-				animation.addByPrefix('singLEFT', 'left', 24);
+				animation.addByPrefix('idle', 'idle', 20);
+				animation.addByPrefix('singUP', 'up', 20);
+				animation.addByPrefix('singRIGHT', 'right', 20);
+				animation.addByPrefix('singDOWN', 'down', 20);
+				animation.addByPrefix('singLEFT', 'left', 20);
 
 				addOffset('idle', -53, -396);
 				addOffset("singUP", -36, -339);
@@ -133,17 +133,17 @@ class Character extends FlxSprite
 				addOffset("singDOWN", -78, -400);
 
 				playAnim('idle');
-
-                                flipX = true;
-                case 'stevb':
+				
+				flipX = true;
+				case 'stevb':
 				// STEV B SIDE
 				tex = Paths.getSparrowAtlas('characters/stevbside');
 				frames = tex;
-				animation.addByPrefix('idle', 'idle', 24);
-				animation.addByPrefix('singUP', 'up', 24);
-				animation.addByPrefix('singRIGHT', 'right', 24);
-				animation.addByPrefix('singDOWN', 'down', 24);
-				animation.addByPrefix('singLEFT', 'left', 24);
+				animation.addByPrefix('idle', 'idle', 20);
+				animation.addByPrefix('singUP', 'up', 20);
+				animation.addByPrefix('singRIGHT', 'right', 20);
+				animation.addByPrefix('singDOWN', 'down', 20);
+				animation.addByPrefix('singLEFT', 'left', 20);
 
 				addOffset('idle', -53, -396);
 				addOffset("singUP", -36, -339);
@@ -152,8 +152,8 @@ class Character extends FlxSprite
 				addOffset("singDOWN", -78, -400);
 
 				playAnim('idle');
-
-                                flipX = true;
+				
+				flipX = true;
 		}
 
 		dance();
