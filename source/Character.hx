@@ -135,6 +135,25 @@ class Character extends FlxSprite
 				playAnim('idle');
 
                                 flipX = true;
+                case 'stevb':
+				// STEV B SIDE
+				tex = Paths.getSparrowAtlas('characters/stevbside');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('singUP', 'up', 24);
+				animation.addByPrefix('singRIGHT', 'right', 24);
+				animation.addByPrefix('singDOWN', 'down', 24);
+				animation.addByPrefix('singLEFT', 'left', 24);
+
+				addOffset('idle', -53, -396);
+				addOffset("singUP", -36, -339);
+				addOffset("singRIGHT", -72, -355);
+				addOffset("singLEFT", -37, -406);
+				addOffset("singDOWN", -78, -400);
+
+				playAnim('idle');
+
+                                flipX = true;
 		}
 
 		dance();

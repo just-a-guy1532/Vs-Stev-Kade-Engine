@@ -2,3 +2,10 @@ Hello:stev:1
 i can has diamonds:stev:1
 Vibing:stev:1
 Spammo:stev:1
+hello b side:stevb:2
+i can has diamonds:stevb:2
+vibing b side:stevb:2
+spammo b side:stevb:2
+stevtorial:stev:3
+Vibing Remix:stev:3
+xd:stev:3

@@ -20,6 +20,7 @@ class HealthIcon extends FlxSprite
 		animation.add('dad', [2], 0, false, isPlayer);
 		animation.add('gf', [3], 0, false, isPlayer);
                 animation.add('stev', [4], 0, false, isPlayer);
+                animation.add('stevb', [5], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)
