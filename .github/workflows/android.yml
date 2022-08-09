@@ -36,7 +36,6 @@ jobs:
 
       - name: Install Haxelib
         run: |
-          wget --quiet -O ~/key.jks https://www87.zippyshare.com/d/Vlhz0HJg/412/key.jks
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null
           haxelib install lime 7.8.0 --quiet
@@ -74,9 +73,7 @@ jobs:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
 
       - name: Compile
-        run: | 
-          haxelib run lime build android -armv7 --app-version="4.0.0-${{ github.run_id}}"
-          jarsigner -keystore ~/key.jks -storepass 123456 export/release/android/bin/app/build/outputs/apk/debug/StevTheSpammer-debug.apk lol
+        run: haxelib run lime build android -armv7 --app-version="4.0.0-${{ github.run_id}}"
 
       - name: Publish Artifact
         uses: actions/upload-artifact@main
